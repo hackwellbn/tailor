@@ -1,0 +1,12 @@
+.counter {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.counter-body {
+  flex-grow: 1;
+  flex-basis: 200px;
+}

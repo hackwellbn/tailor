@@ -1,0 +1,19 @@
+.services {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.services-content {
+  flex-grow: 1;
+  flex-basis: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--neutral-charcoal);
+}

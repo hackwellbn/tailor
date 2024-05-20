@@ -1,0 +1,26 @@
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .testimonial {
+    background-color: var(--neutral-cream);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Adjust width as needed with appropriate margin */
+  }
+  
+  .testimonial-text {
+    color: var(--neutral-charcoal);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .author-name {
+    color: var(--neutral-silver);
+    font-weight: bold;
+    font-size: 14px;
+  }
+  

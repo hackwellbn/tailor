@@ -1,44 +1,86 @@
 .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--navbar-background);
-    padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navbar-background);
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.coloredletter {
+  color: #964b00;
+}
+
+.material-icons {
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+.menu {
+  display: flex; /* Visible by default */
+}
+
+.navlists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.navlists .navLink {
+  color: var(--navbar-text);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.navlists .navLink:hover {
+  color: var(--link-hover); /* Darken color on hover */
+}
+
+.navlists .navLink::after {
+  content: "";
+  height: 2px;
+  background: #964b00;
+  width: 0;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.navlists .navLink:hover::after {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .material-icons {
+    display: block; /* Show menu icon on small screens */
   }
-  
-  .navlists {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    list-style: none;
+  .menu {
+    display: none; /* Hide menu on small screens */
   }
-  
-  .navlists .navLink {
-    color: var(--navbar-text);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-  
-    &:hover {
-      color: var(--link-hover); /* Darken color on hover */
-    }
-  }
-  
-  .navlists .navLink::after {
-    content: "";
-    height: 2px;
-    background: #964b00;
-    width: 0;
+  .menu.open {
+    display: block; /* Show menu when open on small screens */
     position: absolute;
-    bottom: -2px;
-    left: 0;
-    transition: width 0.3s;
-  }
-  
-  .navlists .navLink:hover::after {
+    top: 0;
+    right: 0;
+    background-color: var(--navbar-background);
     width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    padding: 20px;
   }
-  
+  .navlists {
+    flex-direction: column;
+    align-items: center;
+  }
+}
