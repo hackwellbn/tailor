@@ -5,7 +5,7 @@ import About from './Pages/AboutPage/About';
 import Contact from './Pages/Contacts/Contact';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
-
+import './App.css'
 const App = () => {
   return (
     <BrowserRouter>

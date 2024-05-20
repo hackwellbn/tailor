@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--navbar-background);
+    padding: 20px 20px;
+  }
+  
+  .navlists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .navlists .navLink {
+    color: var(--navbar-text);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+  
+    &:hover {
+      color: var(--link-hover); /* Darken color on hover */
+    }
+  }
+  
+  .navlists .navLink::after {
+    content: "";
+    height: 2px;
+    background: #964b00;
+    width: 0;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s;
+  }
+  
+  .navlists .navLink:hover::after {
+    width: 100%;
+  }
+  
