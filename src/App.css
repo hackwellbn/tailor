@@ -1,4 +1,66 @@
-*{
+:root {
+  /* Main Colors */
+  --primary-blue: hsl(210, 90%, 50%); /* A vibrant blue */
+  --secondary-gold: hsl(45, 90%, 50%); /* A rich gold */
+
+  /* Accent Colors */
+  --accent-crimson: hsl(330, 80%, 60%); /* A deep crimson */
+  --accent-olive: hsl(90, 60%, 40%); /* A warm olive */
+
+  /* Neutral Colors */
+  --neutral-charcoal: hsl(0, 0%, 20%); /* A dark charcoal */
+  --neutral-silver: hsl(0, 0%, 70%); /* A light silver */
+  --neutral-cream: hsl(45, 30%, 95%); /* A creamy off-white */
+
+  /* Button and Link Colors */
+  --button-background: var(--primary-blue); /* Button background color */
+  --button-text: var(--neutral-cream); /* Button text color */
+  --link-text: var(--primary-blue); /* Link text color */
+  --link-hover: var(--accent-crimson); /* Link hover color */
+
+  /* Text Colors */
+  --text-heading: var(--neutral-charcoal); /* Heading text color */
+  --text-body: var(--neutral-charcoal); /* Body text color */
+  --text-muted: var(--neutral-silver); /* Muted text color */
+
+  /* Navbar Colors */
+  --navbar-background: var(--neutral-cream); /* Navbar background color */
+  --navbar-text: var(--neutral-charcoal); /* Navbar text color */
+
+  /* Footer Colors */
+  --footer-background: var(--neutral-cream); /* Footer background color */
+  --footer-text: var(--neutral-charcoal); /* Footer text color */
+}
+
+/* Primary Blue: A vibrant and energetic blue that can be used for main elements or to grab attention.
+Secondary Gold: A rich gold that adds warmth and sophistication, contrasting beautifully with the blue.
+Accent Crimson: A deep crimson for highlighting or adding drama.
+Accent Olive: A warm olive for a natural and earthy touch, providing balance to the other colors.
+Neutral Charcoal: A dark charcoal for text or backgrounds, adding depth and contrast.
+Neutral Silver: A light silver for subtle accents or borders.
+Neutral Cream: A creamy off-white for backgrounds or soft contrasts. */
+
+* {
   padding: 0;
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-heading);
+  /* Additional styles for headings */
+}
+
+p {
+  color: var(--text-body);
+  /* Additional styles for paragraphs */
+}
+
+.muted {
+  color: var(--text-muted);
+  /* Additional styles for muted text */
 }

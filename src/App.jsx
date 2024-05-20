@@ -1,23 +1,24 @@
-// App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Layout from './Layout';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Pages/HomePage/Home';
+import About from './Pages/AboutPage/About';
+import Contact from './Pages/Contacts/Contact';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
 
 const App = () => {
   return (
-    <Router>
-      <Layout>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </Switch>
-      </Layout>
-    </Router>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/production" element={<Production />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
