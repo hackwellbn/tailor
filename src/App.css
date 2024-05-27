@@ -40,8 +40,9 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
   text-transform: capitalize;
+  scroll-behavior: smooth;
 }
-
+html
 h1,
 h2,
 h3,

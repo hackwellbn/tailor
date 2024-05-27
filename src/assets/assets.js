@@ -3,6 +3,18 @@ import banner2 from "./banner2.jpg";
 import banner3 from "./banner3.jpg";
 import banner4 from "./banner4.jpg";
 import Testimonial_1 from "./romans6_3.jpeg";
+import Testimonial_2 from "./pexels-godisable-jacob-718978-BSHTpUfi.jpg";
+import Testimonial_3 from "./portrait-upset-american-black-person_23-2148749581-CDWXVPAM.jpg"
+// assets.js
+import unleash from "./unleash.jpg";
+import Videoweld from './videoweld.mp4';
+
+export const videosWeld = {
+  Videoweld,
+};
+export const assets ={
+unleash,
+}
 export const heroSection = [
   {
     title: "Welcome to BlessedFabricators",
@@ -42,10 +54,25 @@ export const TestimonialsComponent = [
   {
     name: "John Smith  ",
     description:
-      "The welding services provided by [Your Company Name] exceeded my expectations. The craftsmanship and attention to detail are unparalleled. Highly recommended!",
+      "The welding services provided by blessedFabricators exceeded my expectations. The craftsmanship and attention to detail are unparalleled. Highly recommended!",
     image: Testimonial_1,
     position: "CEO, softNet",
+    rating: 5,
   },
-  
-
+  {
+    name: "Hellen Gathoni",
+    description:
+      "I needed urgent welding repairs for my industrial equipment, and blessedFabricators delivered promptly with exceptional quality. Will definitely be a repeat customer.",
+    image: Testimonial_2,
+    position: "Data scientist",
+    rating: 5,
+  },
+  {
+    name: "John Smith  ",
+    description:
+      "The welding services provided by blessedFabricators exceeded my expectations. The craftsmanship and attention to detail are unparalleled. Highly recommended!",
+    image: Testimonial_3,
+    position: "CEO, softNet",
+    rating: 5,
+  },
 ];

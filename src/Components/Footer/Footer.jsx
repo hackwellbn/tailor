@@ -1,5 +1,7 @@
 import React from 'react';
 import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faWhatsapp, faLinkedin, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -7,12 +9,16 @@ const Footer = () => {
       <section className="footer-section">
         <div className="footer-container">
           <div className="footer-content">
-            <h2>Important Links</h2>
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">WhatsApp</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">TikTok</a></li>
+            <h1><div className="logo">Blessed<span className='coloredletter'>F</span>abricators</div></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nesciunt dolorum ea dolorem modi assumenda repellat tenetur quos ipsa, eaque iure praesentium molestias. Odio iure soluta nobis nemo praesentium? Iure.</p>
+          </div>
+          <div className="footer-content">
+            <h2>follow us</h2>
+            <ul className='footer-listings'>
+              <li><a href="#"><FontAwesomeIcon icon={faFacebook} /></a></li>
+              <li><a href="#"><FontAwesomeIcon icon={faWhatsapp} /> </a></li>
+              <li><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+              <li><a href="#"><FontAwesomeIcon icon={faTiktok} /></a></li>
             </ul>
           </div>
           <div className="footer-content">

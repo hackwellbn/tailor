@@ -1,3 +1,6 @@
+.header {
+  background-color: var(--navbar-background);
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -63,13 +66,13 @@
 
 @media screen and (max-width: 768px) {
   .material-icons {
-    display: block; /* Show menu icon on small screens */
+    display: block;
   }
   .menu {
-    display: none; /* Hide menu on small screens */
+    display: none;
   }
   .menu.open {
-    display: block; /* Show menu when open on small screens */
+    display: block; 
     position: absolute;
     top: 0;
     right: 0;

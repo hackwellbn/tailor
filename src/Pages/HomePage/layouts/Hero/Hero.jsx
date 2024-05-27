@@ -4,6 +4,8 @@ import { heroSection } from '../../../../assets/assets';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp, faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Hero = () => {
   const settings = {
@@ -30,7 +32,12 @@ const Hero = () => {
                   <button>{heroBanner.buttonText}</button>
                   <button>{heroBanner.buttonLink}</button>
                 </div>
-
+                <ul className='icons'>
+                  <li><a href="http://"><FontAwesomeIcon icon={faFacebook} className='icon' /></a></li>
+                  <li><a href="http://"><FontAwesomeIcon icon={faWhatsapp} className='icon' /></a></li>
+                  <li><a href="http://"><FontAwesomeIcon icon={faLinkedin} className='icon' /></a></li>
+                  <li><a href="http://"><FontAwesomeIcon icon={faInstagram} className='icon' /></a></li>
+                </ul>
               </div>
             </div>
           </div>

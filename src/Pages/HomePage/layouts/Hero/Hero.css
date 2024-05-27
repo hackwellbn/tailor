@@ -66,7 +66,40 @@
   from {
     transform: translateY(0);
   }
-  to{
+  to {
     transform: translateY(100%);
   }
 }
+.icons {
+  position: absolute;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to make it more transparent */
+  backdrop-filter: blur(100px);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.icon {
+  font-size: min(5vw, 30px); /* Adjust the maximum size based on viewport width */
+  color: yellow;
+  transition: transform 0.3s ease, color 0.3s ease; /* Adding transition for smooth scaling and color change */
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Scale up the icon on hover */
+  color: var(--accent-crimson); /* Change color on hover */
+}
+
+.icon:active {
+  transform: scale(0.8); /* Scale down the icon on click */
+  color: var(--secondary-gold); /* Change color on click */
+}
+
+/* @keyframes  {
+  
+} */

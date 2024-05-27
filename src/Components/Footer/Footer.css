@@ -11,10 +11,16 @@
 }
 
 .footer-content {
-  flex: 1 1 200px; 
+  flex: 1 1 200px;
   margin: 0 10px; /* Add some margin for spacing */
 }
-
+.footer-listings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 20px;
+}
 ul {
   list-style: none;
   padding: 0; /* Remove default padding */
@@ -26,4 +32,23 @@ ul li {
 
 .footer-last {
   margin-top: 20px; /* Add some space between sections */
+}
+
+.footer a {
+  color: var(--link-text);
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.footer a:hover {
+  color: var(--link-hover); /* Change link color on hover */
+}
+
+/* Font Awesome icons */
+.footer a svg {
+  margin-right: 5px; /* Add space between icon and text */
+}
+.footer-content p{
+  color: var(--secondary-text)
+
 }

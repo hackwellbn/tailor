@@ -5,7 +5,9 @@ import About from './Pages/AboutPage/About';
 import Contact from './Pages/Contacts/Contact';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
+
 import './App.css'
+import Quote from './Pages/Quote/Quote';
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,6 +17,7 @@ const App = () => {
         {/* <Route path="/production" element={<Production />} /> */}
         <Route path="/about" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/quote" element={<Quote />} />
       
       </Routes>
       <Footer />

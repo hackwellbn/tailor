@@ -1,0 +1,33 @@
+.diff {
+  text-align: center;
+}
+.difference-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.difference-content {
+  flex: 1 1 200px;
+  height: 400px;
+  margin: auto;
+  width: 80%;
+
+  background: linear-gradient(
+    hsla(0, 0%, 0%, 0.102),
+    hsla(0, 0%, 0%, 0.102),
+    hsla(0, 0%, 0%, 0.102)
+  );
+  border: 1px solid var(--accent-olive);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+}
+p {
+  animation: appear linear forwards;
+  animation-range: entry 25% cover 50%;
+  animation-timeline: view();
+}

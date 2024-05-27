@@ -1,0 +1,21 @@
+.unleash-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.unleash-content {
+  flex: 1 1 200px;
+  padding: 20px;
+  margin: auto;
+}
+.unleash {
+  margin: auto;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
