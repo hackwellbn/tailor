@@ -12,8 +12,8 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: top 0.3s; /* Add transition for smooth change in position */
-  width: 100%; /* Ensure the navbar takes full width */
+  transition: top 0.3s;
+  width: 100%;
 }
 
 .fixed {
@@ -78,10 +78,14 @@
 @media screen and (max-width: 768px) {
   .material-icons {
     display: block;
+    font-size: 24px; /* Adjust the size of the icon */
+    margin-right: 10px; /* Add margin to separate the icon from the logo */
   }
+
   .menu {
     display: none;
   }
+
   .menu.open {
     display: block; 
     position: absolute;
@@ -93,12 +97,12 @@
     z-index: 1000;
     padding: 20px;
   }
+
   .navlists {
     flex-direction: column;
     align-items: center;
   }
 
-  /* Adjustments for mobile devices */
   .navbar {
     padding: 10px;
   }

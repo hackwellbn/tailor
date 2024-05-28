@@ -30,19 +30,22 @@ const Counter = () => {
     }, []); // Empty dependency array ensures the effect runs only once
 
     return (
-        <div className='counter'>
-            <div className="counter-body">
-                <h1>the number of companies we have worked with</h1>
-                <h3>{clientsWorkedWith + 20}+</h3>
-            </div>
-            <div className="counter-body">
-                <h1>the number of individual clients we have worked with</h1>
-                <h3> {clientsWorkedWith  + 100}+</h3>
-            </div><div className="counter-body">
-                <h1>the number of companies we have worked with</h1>
-                <h3>{clientsWorkedWith + 40}+</h3>
+        <div className='counter-all'>
+            <div className='counter'>
+                <div className="counter-body">
+                    <h1>the number of companies we have worked with</h1>
+                    <h3><span>{clientsWorkedWith + 20}+</span></h3>
+                </div>
+                <div className="counter-body">
+                    <h1>the number of individual clients we have worked with</h1>
+                    <h3><span> {clientsWorkedWith + 100}+</span></h3>
+                </div><div className="counter-body">
+                    <h1>the number of companies we have worked with</h1>
+                    <h3><span>{clientsWorkedWith + 40}+</span></h3>
+                </div>
             </div>
         </div>
+
     );
 };
 
