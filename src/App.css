@@ -20,7 +20,7 @@
   --text-body: var(--neutral-charcoal); /* Body text color */
   --text-muted: var(--neutral-silver); /* Muted text color */
   /* Navbar Colors */
-  --navbar-background : var(--neutral-cream); /* Navbar background color */
+  --navbar-background: var(--neutral-cream); /* Navbar background color */
   --navbar-text: var(--neutral-charcoal); /* Navbar text color */
   /* Footer Colors */
   --footer-background: var(--neutral-cream); /* Footer background color */
@@ -42,8 +42,7 @@
   text-transform: capitalize;
   scroll-behavior: smooth;
 }
-html
-h1,
+html h1,
 h2,
 h3,
 h4,
@@ -56,9 +55,21 @@ h6 {
 p {
   color: var(--text-body);
   /* Additional styles for paragraphs */
+  animation: appear linear forwards;
+  animation-range: entry 25% cover 50%;
+  animation-timeline: view();
 }
 
 .muted {
   color: var(--text-muted);
   /* Additional styles for muted text */
-} /*# sourceMappingURL=App.css.map */
+}
+ 
+
+.lined {
+  margin: auto;
+  background-color: var(--secondary-gold);
+  width: 50px;
+  height: 6px;
+  border-radius: 10px;
+}

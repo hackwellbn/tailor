@@ -31,6 +31,8 @@
   text-align: left;
   color: var(--neutral-silver); /* Text color for the hero text */
   padding: 20px;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 .hero-text h1 {
