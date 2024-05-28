@@ -101,6 +101,7 @@
   .navlists {
     flex-direction: column;
     align-items: center;
+    margin-top: 20px; /* Add margin to adjust vertical spacing */
   }
 
   .navbar {
