@@ -4,8 +4,7 @@
 
 .hero-image {
   height: 100vh;
-  width: 100%; /* Ensure the image fills the entire viewport width */
-  max-width: 100vw; /* Ensure the image doesn't exceed the viewport width */
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -16,45 +15,45 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adjust the overlay color and opacity as needed */
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Changed from center to flex-start */
   align-items: center;
 }
 
 .hero-text {
   text-align: left;
-  color: var(--neutral-silver); /* Text color for the hero text */
+  color: var(--neutral-silver);
   padding: 20px;
   line-height: 1.6;
   font-size: 16px;
+  max-width: 600px; /* Ensure text container has a maximum width */
+  overflow-wrap: break-word; /* Handle text overflow */
+  margin-left: 20px; /* Add margin to ensure text is not too close to the edge */
 }
 
 .hero-text h1 {
-  font-size: 3rem; /* Adjust heading font size */
+  font-size: 3rem;
   margin-bottom: 20px;
   color: var(--neutral-cream);
 }
 
 .hero-text p {
-  font-size: 1.5rem; /* Adjust paragraph font size */
+  font-size: 1.5rem;
   margin-bottom: 20px;
   color: var(--neutral-silver);
 }
+
 .hero-text .btns {
   gap: 10px;
   display: flex;
 }
+
 .hero-text button {
   padding: 12px 24px;
-  font-size: 1.2rem; /* Adjust button font size */
-  background-color: var(--primary-blue); /* Button background color */
-  color: var(--neutral-cream); /* Button text color */
+  font-size: 1.2rem;
+  background-color: var(--primary-blue);
+  color: var(--neutral-cream);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -62,46 +61,36 @@
 }
 
 .hero-text button:hover {
-  background-color: #dddddd; /* Button hover background color */
+  background-color: #dddddd;
 }
-@keyframes moveUpwards {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(100%);
-  }
-}
+
 .icons {
   position: absolute;
-  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to make it more transparent */
-  backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
   padding: 10px 20px;
   border-radius: 10px;
 }
+
 .icon {
-  font-size: min(5vw, 30px); /* Adjust the maximum size based on viewport width */
+  font-size: min(5vw, 30px);
   color: yellow;
-  transition: transform 0.3s ease, color 0.3s ease; /* Adding transition for smooth scaling and color change */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon:hover {
-  transform: scale(1.2); /* Scale up the icon on hover */
-  color: var(--accent-crimson); /* Change color on hover */
+  transform: scale(1.2);
+  color: var(--accent-crimson);
 }
 
 .icon:active {
-  transform: scale(0.8); /* Scale down the icon on click */
-  color: var(--secondary-gold); /* Change color on click */
+  transform: scale(0.8);
+  color: var(--secondary-gold);
 }
-
-/* @keyframes  {
-  
-} */

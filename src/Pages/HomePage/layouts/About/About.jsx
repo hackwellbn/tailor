@@ -3,11 +3,14 @@ import './About.css';
 import { consultations } from '../../../../assets/assets';
 
 const About = () => {
+    const handleNavigation = (url) => {
+        window.location.href = './about';
+    };
+
     return (
         <div>
             <h1>About Us</h1>
             <div className="About-container">
-
                 {consultations.map((item, index) => (
                     <div className="about-content" key={index}>
                         <div className="about-body">
@@ -15,23 +18,24 @@ const About = () => {
                                 <div className="about-description about-flex">
                                     <h3>{item.heading}</h3>
                                     <p>{item.description}</p>
-                                    <div className="btns">
-                                        <button className='btn'>{item.buttonText}</button>
-                                        <button className='btn'>{item.buttonLink}</button>
-                                    </div>
+                                    {item.buttonText && item.buttonLink && (
+                                        <div className="btns">
+                                            <button className='btn' onClick={() => handleNavigation(item.buttonLink)}>
+                                                {item.buttonText}
+                                            </button>
+                                        </div>
+                                    )}
                                 </div>
                                 <div className="about-image about-flex">
                                     <img src={item.image} alt={`Consultation ${index}`} />
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 ))}
-
             </div>
         </div>
     );
-}
+};
 
 export default About;

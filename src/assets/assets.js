@@ -23,7 +23,7 @@ export const heroSection = [
       " we specialize in the art of fusing metals together seamlessly. With unparalleled craftsmanship and precision, we craft excellence in metalwork, turning raw materials into masterpieces that stand the test of time. Our dedication to quality and innovation ensures that every project exceeds expectations. Explore our capabilities and experience the difference with BlessedFabricators.",
     image: banner1,
     buttonText: "Capabilities",
-    buttonLink: "call us",
+    buttonLink: "/services/#capabilities",
   },
   {
     title: "Discover the Craftsmanship",
@@ -31,7 +31,7 @@ export const heroSection = [
       "Explore the world of welding, where skilled artisans blend tradition with innovation to create remarkable metalwork. From intricate designs to structural integrity, our craftsmanship sets the standard for excellence in welding. Discover the artistry and precision behind every weld at Welding.",
     image: banner2,
     buttonText: "Learn More",
-    buttonLink: "about us",
+    buttonLink: "/about",
   },
   {
     title: "Unleash Your Creativity",
@@ -39,7 +39,7 @@ export const heroSection = [
       "Embrace our limitless possibilities and unleash your creativity. Whether you dream of custom metal sculptures, functional art pieces, or industrial solutions, we're here to bring your visions to life. Let your imagination soar with us.",
     image: banner3,
     buttonText: "Get Started",
-    buttonLink: "contact us",
+    buttonLink: "/Contact",
   },
   {
     title: "Quality Craftsmanship, Trusted Results",
@@ -47,7 +47,7 @@ export const heroSection = [
       "With decades of experience and a commitment to excellence, We deliver trusted results for all your metalwork needs. Our skilled team combines technical expertise with a passion for precision, ensuring superior craftsmanship and lasting quality in every project. Partner with BlessedFabricators for results you can rely on.",
     image: banner4,
     buttonText: "Contact Us",
-    buttonLink: "Process",
+    buttonLink: "/Contact",
   },
 ];
 

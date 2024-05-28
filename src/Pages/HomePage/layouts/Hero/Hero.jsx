@@ -6,8 +6,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp, faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   const settings = {
     dots: true,
     infinite: true,
@@ -29,8 +32,9 @@ const Hero = () => {
                 <h1>{heroBanner.title}</h1>
                 <p>{heroBanner.description}</p>
                 <div className="btns">
-                  <button>{heroBanner.buttonText}</button>
-                  <button>{heroBanner.buttonLink}</button>
+                  <button onClick={() => navigate(heroBanner.buttonLink)}>
+                    {heroBanner.buttonText}
+                  </button>
                 </div>
                 <ul className='icons'>
                   <li><a href="http://"><FontAwesomeIcon icon={faFacebook} className='icon' /></a></li>

@@ -52,3 +52,6 @@ ul li {
   color: var(--secondary-text)
 
 }
+.footer-links{
+  color: var(--secondary-gold);
+}
