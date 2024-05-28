@@ -3,6 +3,10 @@ import './Advanced.css'
 import { assets } from '../../../../assets/assets'
 
 const Advanced = () => {
+
+    const handleLink = (e) => {
+        window.location.href = '/Contact';
+    }
     return (
         <div className='advanced'>
             <div className="unleash-container">
@@ -10,14 +14,18 @@ const Advanced = () => {
                     <div className="unleash">
                         <h2>unleash the power of precision welding</h2>
                         <p>Discover industry-leading welding solutions tailored to elevate your projects to the next level.</p>
-                        <button className='btn'>Get started Now</button>
+                        <button onClick={handleLink} className='btn'>Get started Now</button>
                     </div>
                 </div>
                 <div className="unleash-content">
-                    <img src={assets.unleash} alt="" />
-                    <div className="unleash-overlay">
-                        <p>we work in strength and in boldness just to bring the quality designs you prefer that is commencing with a great commitment from consultation to the end products</p>
+                    <div className="unleash-body">
+                        <img src={assets.unleash} alt="" />
+                        <div className="unleash-overlay">
+                            <p>we work in strength and in boldness just to bring the quality designs you prefer that is commencing with a great commitment from consultation to the end products</p>
+                        <div className="lined"></div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>

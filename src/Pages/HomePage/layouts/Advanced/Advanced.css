@@ -19,3 +19,47 @@
 img {
   width: 100%;
 }
+.unleash .btn {
+  margin-top: 10px;
+}
+.unleash-body {
+  position: relative;
+  overflow: hidden;
+}
+.unleash-overlay {
+  display: none;
+  color: var(--secondary-gold);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: block;
+}
+.unleash-overlay p{
+    display: none;
+}
+.unleash-body:hover {
+  overflow: hidden;
+}
+.unleash-overlay:hover {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  overflow: hidden;
+}
+.unleash-overlay:hover p {
+    display: block;
+  color: var(--secondary-gold);
+}
+.unleash-overlay:hover .lined {
+  margin: auto;
+  background-color: var(--secondary-gold);
+  width: 50px;
+  height: 6px;
+  border-radius: 10px;
+}
+.unleash-overlay:hover .lined:hover{
+    width: 200px;
+    transition: 0.5s;
+}
