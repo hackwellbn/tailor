@@ -1,49 +1,48 @@
 .Experience {
-    display: flex;
-    flex-wrap: wrap;
-    background: var(--neutral-cream);
-    margin-top: 10px;
-    padding: 20px;
-  }
-  
-  .experienceUs {
-    flex: 1 1 50%;
-    padding: 10px;
-  }
-  
-  .experienceUs video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .experience-description {
-    margin: 0 auto;
-    width: 80%;
-    line-height: 1.6;
-    color: var(--text-body); /* Using the defined body text color */
-  }
-  
-  .experiencebtns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 16px;
-    margin-top: 20px;
-  }
-  
-  .btn {
-    padding: 12px 24px;
-    background: var(--button-background);
-    border: none;
-    border-radius: 10px;
-    color: var(--button-text);
-    transition: background 0.3s ease;
-  }
-  
-  .btn:hover {
-    background: var(--link-hover);
-    cursor: pointer;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--neutral-cream);
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.experienceUs {
+  flex: 1 1 50%;
+  padding: 10px;
+}
+
+.experienceUs video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-description {
+  margin: 0 auto;
+  width: 80%;
+  line-height: 1.6;
+  color: var(--text-body); /* Using the defined body text color */
+}
+
+.experiencebtns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  background: var(--button-background);
+  border: none;
+  border-radius: 10px;
+  color: var(--button-text);
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--link-hover);
+  cursor: pointer;
+}

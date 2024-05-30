@@ -14,12 +14,13 @@ import logo from "./logo.jpg";
 import Logo_ from "./logo_.png";
 // import AboutHero from "./about-image.jpg";
 import contactImage from "./transform.jpeg";
+// import Animation_4 from './animation_4.jpg';
 import imagePortfolio_1 from "./portfolio.jpg"
 import imagePortfolio_3 from "./portfolio2.jpg"
 import imagePortfolio_4 from "./portfolio3.jpg"
 import imagePortfolio_5 from "./portfolio4.jpg"
 import imagePortfolio_6 from "./portfolio5.jpg"
-
+import collVideo from "./coll_video.webm"
 
 export const videosWeld = {
   Videoweld,
@@ -165,3 +166,7 @@ export const PortfolioImage = [ {
   image_5: imagePortfolio_5,
   image_6: imagePortfolio_6,
 }];
+
+export const collaborationVideo = [ {
+  video: collVideo,
+}]

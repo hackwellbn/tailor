@@ -1,0 +1,23 @@
+.collaborators{
+    background-color: rgb(78, 233, 181);
+    margin-top: 20px;
+}
+.collaborations{
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.collaborators-content{
+    flex:1 1 200px;
+}
+.video-collaborators{
+    width: 20vw;
+}
+.btn{
+    margin-top: 10px;
+}

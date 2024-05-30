@@ -9,6 +9,7 @@ import Projects from './layouts/Projects/Projects'
 import Advanced from './layouts/Advanced/Advanced'
 import About from './layouts/About/About'
 import Portfolio from './layouts/Portfolio/Portfolio'
+import Collaborators from './layouts/Collaborators/Collaborators'
 const Home = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const Home = () => {
       <About />
       <Services />
       <Portfolio />
+      <Collaborators />
       <Testimonials />
     </div>
   )
