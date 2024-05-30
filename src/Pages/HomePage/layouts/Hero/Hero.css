@@ -1,3 +1,4 @@
+/* General Styles */
 .hero-slide {
   position: relative;
 }
@@ -17,7 +18,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: flex-start; /* Changed from center to flex-start */
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -27,9 +28,9 @@
   padding: 20px;
   line-height: 1.6;
   font-size: 16px;
-  max-width: 600px; /* Ensure text container has a maximum width */
-  overflow-wrap: break-word; /* Handle text overflow */
-  margin-left: 20px; /* Add margin to ensure text is not too close to the edge */
+  max-width: 600px;
+  overflow-wrap: break-word;
+  margin: 20px;
 }
 
 .hero-text h1 {
@@ -93,4 +94,78 @@
 .icon:active {
   transform: scale(0.8);
   color: var(--secondary-gold);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .hero-text {
+    font-size: 1.4rem;
+    padding: 20px;
+    margin: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .hero-text button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-size: 1.2rem;
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-text button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .icons {
+    bottom: 10px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .hero-text button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .icons {
+    bottom: 5px;
+    padding: 5px 10px;
+  }
 }

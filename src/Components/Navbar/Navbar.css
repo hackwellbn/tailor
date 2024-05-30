@@ -1,3 +1,4 @@
+/* General Styles */
 .header {
   background-color: var(--navbar-background);
 }
@@ -12,13 +13,17 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: top 0.3s;
-  width: 100%;
+  width: 100%; /* Ensure full width */
+  transition: top 0.3s, box-shadow 0.3s; /* Transition for box shadow */
+  box-shadow: none; /* Initial state without shadow */
 }
 
 .fixed {
   position: fixed;
   top: 0;
+  left: 0; /* Ensure it sticks to the left edge */
+  right: 0; /* Ensure it sticks to the right edge */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow when fixed */
 }
 
 .logo {
@@ -46,6 +51,8 @@
   align-items: center;
   gap: 10px;
   list-style: none;
+  padding: 0; /* Remove any default padding */
+  margin: 0; /* Remove any default margin */
 }
 
 .navlists .navLink {

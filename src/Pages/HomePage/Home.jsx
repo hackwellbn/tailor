@@ -8,6 +8,7 @@ import Experience from './layouts/Experience/Experience'
 import Projects from './layouts/Projects/Projects'
 import Advanced from './layouts/Advanced/Advanced'
 import About from './layouts/About/About'
+import Portfolio from './layouts/Portfolio/Portfolio'
 const Home = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const Home = () => {
       <Counter />
       <About />
       <Services />
+      <Portfolio />
       <Testimonials />
     </div>
   )

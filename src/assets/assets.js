@@ -9,10 +9,17 @@ import banner4 from "./banner4.jpg";
 import Testimonial_1 from "./romans6_3.jpeg";
 import Testimonial_2 from "./pexels-godisable-jacob-718978-BSHTpUfi.jpg";
 import Testimonial_3 from "./portrait-upset-american-black-person_23-2148749581-CDWXVPAM.jpg";
-// import quote_webp from "./quote.webp";
+import quote_webp from "./quote.webp";
 import logo from "./logo.jpg";
 import Logo_ from "./logo_.png";
 // import AboutHero from "./about-image.jpg";
+import contactImage from "./transform.jpeg";
+import imagePortfolio_1 from "./portfolio.jpg"
+import imagePortfolio_3 from "./portfolio2.jpg"
+import imagePortfolio_4 from "./portfolio3.jpg"
+import imagePortfolio_5 from "./portfolio4.jpg"
+import imagePortfolio_6 from "./portfolio5.jpg"
+
 
 export const videosWeld = {
   Videoweld,
@@ -140,8 +147,21 @@ export const AboutFeatures = [
   },
 ];
 
-// export const quoteWebPimage = [
-//   {
-//     quote_image: quote_webp,
-//   },
-// ];
+export const contactFeatures = [
+  {
+    image: contactImage,
+  },
+];
+
+export const quoteWebPimage = [
+  {
+    quote_image: quote_webp,
+  },
+];
+export const PortfolioImage = [ {
+  image: imagePortfolio_1,
+  image_3: imagePortfolio_3,
+  image_4: imagePortfolio_4,
+  image_5: imagePortfolio_5,
+  image_6: imagePortfolio_6,
+}];
