@@ -4,7 +4,7 @@ import { videosWeld } from '../../../../assets/assets';
 
 const Experience = () => {
   const handleQuote = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     window.location.href = './quote';
   }
   return (
