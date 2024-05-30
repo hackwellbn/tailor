@@ -18,7 +18,7 @@ const Experience = () => {
             Join our community of satisfied customers who have experienced the difference with Blessed Fabricators. We pride ourselves on our attention to detail, commitment to excellence, and personalized approach to every project. Explore our portfolio, read testimonials from our clients, and see why we are the trusted choice for your fabrication needs.
           </p>
           <div className="experiencebtns">
-            <button className="btn" onClick={() => window.location.href = '/quote'}>Get a Quote</button>
+            <button className="btn" onClick={'/quote'}>Get a Quote</button>
             <button className="btn" onClick={() => window.location.href = '/#testimonials'}>View Testimonials</button>
           </div>
         </div>
