@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'; // Import NavLink from react-router-dom
 import './Experience.css';
 import { videosWeld } from '../../../../assets/assets';
 
@@ -23,7 +24,8 @@ const Experience = () => {
             Join our community of satisfied customers who have experienced the difference with Blessed Fabricators. We pride ourselves on our attention to detail, commitment to excellence, and personalized approach to every project.
           </p>
           <div className="experiencebtns">
-            <button className="btn" onClick={handleQuote}>Get a Quote</button>
+            {/* Replace anchor tag with NavLink */}
+            <NavLink style={{textDecoration: "none"}} to="/quote" className="btn">Get a Quote</NavLink>
             <button className="btn" onClick={() => window.location.href = '/#testimonials'}>View Testimonials</button>
           </div>
         </div>
