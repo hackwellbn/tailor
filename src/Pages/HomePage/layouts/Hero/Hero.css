@@ -10,7 +10,7 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  overflow: hidden; /* Hide any content that overflows the viewport height */
+  overflow: hidden; 
 }
 
 .hero-overlay {

@@ -27,7 +27,7 @@
   /* Footer Colors */
   --footer-background: var(--neutral-cream); /* Footer background color */
   --footer-text: var(--neutral-charcoal); /* Footer text color */
-  
+
   /* Featured Projects */
   --featuredProjects: #222831;
 }
@@ -47,7 +47,7 @@
   font-family: "Outfit", sans-serif;
   text-transform: capitalize;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 html h1,
@@ -108,6 +108,6 @@ a {
 }
 
 /* Specific style to override overflow-x hidden for the navbar */
-.navbar {
-  overflow-x: visible;
-}
+/* .navbar{
+  overflow-x: hidden;
+} */

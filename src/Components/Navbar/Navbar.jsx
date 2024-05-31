@@ -52,7 +52,7 @@ const Navbar = () => {
               <ul className='toggledropdown box'>
                 <li><Link className='toggled' to="/Production" onClick={toggleMenu}>Production</Link></li>
                 <hr />
-                <li><Link className='toggled' to="/featuredProjects" onClick={toggleMenu}>Featured Projects</Link></li>
+                <li><Link className='toggled' to="/FeaturedProjects" onClick={toggleMenu}>Featured Projects</Link></li>
                 <hr />
                 <li><Link className='toggled' to="/Mission" onClick={toggleMenu}>Mission</Link></li>
               </ul>
@@ -64,6 +64,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
