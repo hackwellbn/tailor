@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
-
+  const [dropDownOpen, setDropDownOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 200) {
@@ -25,7 +25,12 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setDropDownOpen(!true);
   };
+  const toggleDropDown = () => {
+    setDropDownOpen(!dropDownOpen);
+  }
+
 
   return (
     <>
@@ -41,7 +46,21 @@ const Navbar = () => {
           <ul className='navlists'>
             <li><Link to='/' className='navLink' onClick={toggleMenu}>Home</Link></li>
             <li><Link to='/About' className='navLink' onClick={toggleMenu}>About</Link></li>
-            <li><Link to='/Products' className='navLink' onClick={toggleMenu}>Products</Link></li>
+            <li className="toggleDropDown" onClick={toggleDropDown}>
+              <Link to="services" className='navLink'>services</Link>
+              <span className="material-symbols-outlined dropkey">
+                {dropDownOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}
+              </span>
+              {dropDownOpen && (
+                <ul className='toggledropdown box'>
+                   <li><Link className='toggled' to="/Production">Production</Link></li>
+                   <hr />
+                  <li><Link className='toggled' to="/featuredProjects">Featured Projects</Link></li>
+                  <hr />
+                  <li><Link  className='toggled'to="/Mission">Mission</Link></li>
+                </ul>
+              )}
+            </li>
             <li><Link to='/Contact' className='navLink' onClick={toggleMenu}>Contact</Link></li>
           </ul>
         </div>

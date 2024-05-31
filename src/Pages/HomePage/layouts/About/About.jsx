@@ -9,7 +9,6 @@ const About = () => {
 
     return (
         <div>
-            <h1>About Us</h1>
             <div className="About-container">
                 {consultations.map((item, index) => (
                     <div className="about-content" key={index}>

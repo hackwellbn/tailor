@@ -4,7 +4,7 @@
   --primary-blue: hsl(210, 90%, 50%); /* A vibrant blue */
   --secondary-gold: hsl(45, 90%, 50%); /* A rich gold */
   /* Accent Colors */
-  --accent-crimson : hsl(330, 80%, 60%); /* A deep crimson */
+  --accent-crimson: hsl(330, 80%, 60%); /* A deep crimson */
   --accent-olive: hsl(90, 60%, 40%); /* A warm olive */
   /* Neutral Colors */
   --neutral-charcoal: hsl(0, 0%, 20%); /* A dark charcoal */
@@ -25,6 +25,9 @@
   /* Footer Colors */
   --footer-background: var(--neutral-cream); /* Footer background color */
   --footer-text: var(--neutral-charcoal); /* Footer text color */
+  
+  /* featuredprojects */
+  --featuredProjects: #222831;
 }
 
 /* Primary Blue: A vibrant and energetic blue that can be used for main elements or to grab attention.
@@ -53,7 +56,7 @@ h6 {
 }
 
 p {
-  color: var(--text-body);
+  color: var(--text-body) !important;
   /* Additional styles for paragraphs */
   animation: appear linear forwards;
   animation-range: entry 25% cover 50%;
@@ -64,7 +67,6 @@ p {
   color: var(--text-muted);
   /* Additional styles for muted text */
 }
- 
 
 .lined {
   margin: auto;

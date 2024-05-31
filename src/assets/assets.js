@@ -14,21 +14,34 @@ import logo from "./logo.jpg";
 import Logo_ from "./logo_.png";
 // import AboutHero from "./about-image.jpg";
 import contactImage from "./transform.jpeg";
-// import Animation_4 from './animation_4.jpg';
 import imagePortfolio_1 from "./portfolio.jpg"
 import imagePortfolio_3 from "./portfolio2.jpg"
 import imagePortfolio_4 from "./portfolio3.jpg"
 import imagePortfolio_5 from "./portfolio4.jpg"
 import imagePortfolio_6 from "./portfolio5.jpg"
 import collVideo from "./coll_video.webm"
+import welding_1 from "./welding_project.jpg"
+import videoProject from "./weldProject.mp4"
+import grinder from "./grinder.jpg"
+import sparking from './sparking.jpg'
+import weldedGate from "./weldedgate.jpg"
+import structure_1 from "./sk.jpg"
+import structure_2 from "./sk_2.jpg"
 
 export const videosWeld = {
   Videoweld,
+
 };
 export const assets = {
   unleash,
   logo,
   Logo_,
+  grinder,
+  sparking,
+  weldedGate,
+  structure_1,
+  structure_2,
+ 
 };
 export const heroSection = [
   {
@@ -169,4 +182,8 @@ export const PortfolioImage = [ {
 
 export const collaborationVideo = [ {
   video: collVideo,
+}]
+export const  FeaturedProjects =[{
+  image: welding_1,
+  video: videoProject,
 }]

@@ -1,0 +1,58 @@
+
+ @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Outfit:wght@100..900&display=swap");
+.banner-featured {
+  --f-bg-color: #181618;
+  --f-text-color: hsl(150, 100%, 98%);
+  background: var(--f-bg-color);
+}
+.banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.banner-featured-content {
+  flex: 1 1 200px;
+  padding: 20px;
+  margin: auto;
+  font-size: 72px;
+}
+.featured-body {
+  width: 50vw;
+}
+.featured-body  h2 {
+  font-family: "Fugaz One", sans-serif !important;
+  color: var(--f-text-color) !important;
+}
+p {
+  font-size: 22px;
+  color: #d0dbd6;
+} 
+/* Add this at the end of your existing CSS */
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 1024px) {
+  .banner-featured-content {
+    font-size: 48px;
+  }
+  .featured-body {
+    width: 80vw;
+  }
+}
+
+/* Responsive styles for phones and smaller devices */
+@media (max-width: 768px) {
+  .banner-featured-content {
+    flex: 1 1 100%;
+    font-size: 36px;
+  }
+  .banner-container {
+    flex-direction: column;
+  }
+  .featured-body {
+    width: 100%;
+  }
+  p {
+    font-size: 18px;
+  }
+}

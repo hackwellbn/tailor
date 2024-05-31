@@ -1,0 +1,78 @@
+.featuredContent {
+    /* Add any specific styling for the featured content container */
+    background-color: #2B2629;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+.featuredContent h2{
+    color: #fff;
+}
+.featured-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+}
+
+.cards {
+    flex: 1;
+    border-radius: 20px;
+    background: #181618;
+    animation: appear linear forwards;
+  animation-range: entry 25% cover 50%;
+  animation-timeline: view();
+}
+
+.cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.text-container {
+    padding: 20px;
+}
+
+.cards p {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+.description{
+    color: var(--neutral-cream) !important;
+}
+/* Add this at the end of your existing CSS */
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 1024px) {
+    .featured-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .cards {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Responsive styles for phones and smaller devices */
+  @media (max-width: 768px) {
+    .featuredContent {
+      padding: 20px;
+    }
+    .featuredContent h2 {
+      font-size: 2em;
+    }
+    .cards {
+      border-radius: 10px;
+    }
+    .text-container {
+      padding: 10px;
+    }
+    .cards p {
+      font-size: 1em;
+    }
+  }
+  
