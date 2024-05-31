@@ -9,11 +9,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 200) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
+      setIsFixed(window.pageYOffset > 200);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -39,6 +35,11 @@ const Navbar = () => {
         {menuOpen ? 'close' : 'menu'}
       </span>
       <div className={`menu ${menuOpen ? 'open' : ''}`}>
+        {menuOpen && (
+          <span className="material-icons close-icon" onClick={toggleMenu}>
+            close
+          </span>
+        )}
         <ul className='navlists'>
           <li><Link to='/' className='navLink' onClick={toggleMenu}>Home</Link></li>
           <li><Link to='/About' className='navLink' onClick={toggleMenu}>About</Link></li>
@@ -58,12 +59,7 @@ const Navbar = () => {
             )}
           </li>
           <li><Link to='/Contact' className='navLink' onClick={toggleMenu}>Contact</Link></li>
-          <li>
-          <Link to="/quote" className="navLink" onClick={toggleMenu}>
-            Get a Quote
-          </Link>
-          </li>
-
+          <li><Link to="/quote" className="navLink" onClick={toggleMenu}>Get a Quote</Link></li>
         </ul>
       </div>
     </nav>

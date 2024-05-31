@@ -1,6 +1,6 @@
-/* Navbar CSS */
 .header {
   background-color: var(--navbar-background);
+  z-index: 1000;
 }
 
 .navbar {
@@ -16,6 +16,7 @@
   width: 100%;
   transition: top 0.3s, box-shadow 0.3s; /* Transition for box shadow */
   box-shadow: none; /* Initial state without shadow */
+
 }
 
 .fixed {

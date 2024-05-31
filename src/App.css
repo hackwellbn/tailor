@@ -47,6 +47,7 @@
   font-family: "Outfit", sans-serif;
   text-transform: capitalize;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html h1,
@@ -79,9 +80,7 @@ p {
     animation: appear linear forwards;
     animation-range: entry 25% cover 50%;
     animation-timeline: view();
-
   }
-  
   100% {
     background-color: var(--background-color-light);
     color: var(--text-color-light);
@@ -101,8 +100,14 @@ p {
   height: 6px;
   border-radius: 10px;
 }
-a{
+
+a {
   text-decoration: none;
   color: #fff;
   text-align: center;
+}
+
+/* Specific style to override overflow-x hidden for the navbar */
+.navbar {
+  overflow-x: visible;
 }
