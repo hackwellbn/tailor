@@ -3,8 +3,9 @@ import './Experience.css';
 import { videosWeld } from '../../../../assets/assets';
 
 const Experience = () => {
-  const handleQuote = () => {
-    window.location.href = './quote';
+  const handleQuote = (e) => {
+    e.preventDefault();
+    window.location.href = '/quote';
   };
 
   return (
