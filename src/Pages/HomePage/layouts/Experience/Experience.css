@@ -6,8 +6,9 @@
   padding: 20px;
 }
 
+/* General styling for all screen sizes */
 .experienceUs {
-  flex: 1 1 50%;
+  flex: 1 1 100%;
   padding: 10px;
 }
 
@@ -20,7 +21,8 @@
 
 .experience-description {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+  max-width: 600px;
   line-height: 1.6;
   color: var(--text-body); /* Using the defined body text color */
 }
@@ -45,4 +47,41 @@
 .btn:hover {
   background: var(--link-hover);
   cursor: pointer;
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (min-width: 768px) {
+  .experienceUs {
+    flex: 1 1 50%;
+  }
+  .experience-description {
+    width: 80%;
+  }
+}
+
+/* Responsive styles for phones and smaller devices */
+@media (max-width: 767px) {
+  .Experience {
+    flex-direction: column;
+  }
+
+  .experience-description {
+    width: 90%;
+  }
+
+  .experiencebtns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Responsive styles for large screens (1424px and above) */
+@media (min-width: 1424px) {
+  .Experience {
+    padding: 40px;
+  }
+
+  .experience-description {
+    width: 70%;
+  }
 }
