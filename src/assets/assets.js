@@ -123,7 +123,7 @@ export const consultations = [
   },
   {
     heading: "Consultation 2",
-    description: "This is the second consultation description.",
+    description: "we take each and every detail in our conversation keenly to bring you a high quality service.",
     image: Consultations,
   },
   // Add more consultation objects if needed

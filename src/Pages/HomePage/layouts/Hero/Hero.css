@@ -1,13 +1,16 @@
 /* General Styles */
 .hero-slide {
   position: relative;
+  width: 100%;
+  
 }
 
 .hero-image {
-  height: 100vh;
+  height: calc(100vh - 60px); /* Adjusted height to accommodate the navbar */
   width: 100%;
   background-size: cover;
   background-position: center;
+  overflow: hidden; /* Hide any content that overflows the viewport height */
 }
 
 .hero-overlay {
@@ -112,10 +115,11 @@
     font-size: 1.2rem;
     color: var(--neutral-cream) !important;
   }
-.text{
-  color: #fff !important;
 
-}
+  .text {
+    color: #fff !important;
+  }
+
   .hero-text button {
     font-size: 1rem;
     padding: 10px 20px;
