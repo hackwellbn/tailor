@@ -58,6 +58,12 @@ const Navbar = () => {
             )}
           </li>
           <li><Link to='/Contact' className='navLink' onClick={toggleMenu}>Contact</Link></li>
+          <li>
+          <Link to="/quote" className="navLink" onClick={toggleMenu}>
+            Get a Quote
+          </Link>
+          </li>
+
         </ul>
       </div>
     </nav>
