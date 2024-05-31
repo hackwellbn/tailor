@@ -27,7 +27,9 @@ import sparking from './sparking.jpg'
 import weldedGate from "./weldedgate.jpg"
 import structure_1 from "./sk.jpg"
 import structure_2 from "./sk_2.jpg"
-
+import metals from './metals.jpg'
+import metals_2 from './metals2.jpg'
+import metals_3 from './metals3.jpg'
 export const videosWeld = {
   Videoweld,
 
@@ -41,6 +43,11 @@ export const assets = {
   weldedGate,
   structure_1,
   structure_2,
+  metals,
+  metals_2,
+  metals_3,
+ 
+
  
 };
 export const heroSection = [

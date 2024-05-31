@@ -10,8 +10,7 @@ const Footer = () => {
         <div className="footer-container">
           <div className="footer-content">
             <h1><div className="logo">Blessed<span className='coloredletter'>F</span>abricators</div></h1>
-            <p>our expertise in welding transforms raw materials into durable and beautiful structures. Committed to precision and quality, we ensure every project meets the highest standards. Whether you need custom fabrication, structural welding, or expert repairs, trust us to deliver exceptional results. Contact us to bring your metalworking visions to life.</p>
-          </div>
+            <p>our expertise in welding transforms raw materials into durable and beautiful structures. Committed to precision and quality</p></div>
           <div className="footer-content">
             <h2>follow us</h2>
             <ul className='footer-listings'>
