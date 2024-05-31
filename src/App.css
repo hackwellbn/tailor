@@ -101,3 +101,8 @@ p {
   height: 6px;
   border-radius: 10px;
 }
+a{
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
