@@ -25,7 +25,7 @@ const Experience = () => {
           </p>
           <div className="experiencebtns">
             {/* Replace anchor tag with NavLink */}
-            <NavLink style={{textDecoration: "none"}} to="/quote" className="btn">Get a Quote</NavLink>
+            <NavLink style={{textDecoration: "none"}} to="/quote" className="btn"><a href="/quote">Get a Quote</a></NavLink>
             <button className="btn" onClick={() => window.location.href = '/#testimonials'}>View Testimonials</button>
           </div>
         </div>
