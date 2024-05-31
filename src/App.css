@@ -64,6 +64,8 @@ p {
   color: var(--text-body);
   /* Additional styles for paragraphs */
   animation: text-color-transition 5s linear infinite alternate;
+  animation-range: entry 25% cover 50%;
+  animation-timeline: view();
 }
 
 /* Keyframe animation to transition text color based on background color */
@@ -72,6 +74,12 @@ p {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
   }
+  p {
+    /* Additional styles for paragraphs */
+    animation: appear linear forwards;
+   
+  }
+  
   100% {
     background-color: var(--background-color-light);
     color: var(--text-color-light);
