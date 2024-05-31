@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+/* Define CSS variables for colors */
 :root {
   /* Main Colors */
   --primary-blue: hsl(210, 90%, 50%); /* A vibrant blue */
@@ -26,7 +28,7 @@
   --footer-background: var(--neutral-cream); /* Footer background color */
   --footer-text: var(--neutral-charcoal); /* Footer text color */
   
-  /* featuredprojects */
+  /* Featured Projects */
   --featuredProjects: #222831;
 }
 
@@ -37,6 +39,7 @@
   Neutral Charcoal: A dark charcoal for text or backgrounds, adding depth and contrast.
   Neutral Silver: A light silver for subtle accents or borders.
   Neutral Cream: A creamy off-white for backgrounds or soft contrasts. */
+
 * {
   padding: 0;
   margin: 0;
@@ -45,6 +48,7 @@
   text-transform: capitalize;
   scroll-behavior: smooth;
 }
+
 html h1,
 h2,
 h3,
@@ -55,19 +59,31 @@ h6 {
   /* Additional styles for headings */
 }
 
+/* Define text color transition animation */
 p {
-  color: var(--text-body) !important;
+  color: var(--text-body);
   /* Additional styles for paragraphs */
-  animation: appear linear forwards;
-  animation-range: entry 25% cover 50%;
-  animation-timeline: view();
+  animation: text-color-transition 5s linear infinite alternate;
 }
 
+/* Keyframe animation to transition text color based on background color */
+@keyframes text-color-transition {
+  0% {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+  }
+  100% {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+  }
+}
+
+/* Additional styles for muted text */
 .muted {
   color: var(--text-muted);
-  /* Additional styles for muted text */
 }
 
+/* Additional styles for lined elements */
 .lined {
   margin: auto;
   background-color: var(--secondary-gold);

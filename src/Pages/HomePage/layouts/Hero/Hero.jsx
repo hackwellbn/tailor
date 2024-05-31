@@ -30,7 +30,7 @@ const Hero = () => {
             <div className='hero-overlay'>
               <div className='hero-text'>
                 <h1>{heroBanner.title}</h1>
-                <p>{heroBanner.description}</p>
+                <p className='text'>{heroBanner.description}</p>
                 <div className="btns">
                   <button onClick={() => navigate(heroBanner.buttonLink)}>
                     {heroBanner.buttonText}
