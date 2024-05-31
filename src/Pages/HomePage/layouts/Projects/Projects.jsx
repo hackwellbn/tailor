@@ -13,7 +13,7 @@ const Projects = () => {
                 <section className='project-content'>
                     <h2>Discover Our Featured Projects</h2>
                     <p>Explore our showcased welding projects to see our craftsmanship and innovation in action.</p>
-                    <button onClick={handleFeaturedProject} className='btn'>View Featured Projects</button> {/* Corrected onclick to onClick */}
+                    <button onClick={handleFeaturedProject} className='btn'><a href="/FeaturedProjects">FeaturedProjects</a></button> {/* Corrected onclick to onClick */}
                 </section>
                 <section className="project-content">
                     <div className="project-image">
