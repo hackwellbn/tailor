@@ -40,6 +40,39 @@
   Neutral Silver: A light silver for subtle accents or borders.
   Neutral Cream: A creamy off-white for backgrounds or soft contrasts. */
 
+  html{
+    overflow-x: hidden;
+  }
+  body{
+    overflow-x: hidden;
+
+  }
+  body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #222831;
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar-thumb{
+    background-color: var(--accent-crimson);
+    border-radius: 10px;
+    height: 10px;
+  }
+  * Define scrollbar track */
+body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Define scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners of the scrollbar thumb */
+}
+
+/* Define scrollbar thumb on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb on hover */
+}
+
 * {
   padding: 0;
   margin: 0;
