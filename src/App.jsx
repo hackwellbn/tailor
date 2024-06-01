@@ -9,6 +9,7 @@ import './App.css'
 import Quote from './Pages/Quote/Quote';
 import FeaturedProjects from './Pages/FeaturedProjects/FeaturedProjects';
 import Production from './Pages/Production/Production';
+import Mission from './Pages/Mission/Mission';
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/quote" element={<Quote />} />
         <Route path="/FeaturedProjects" element={<FeaturedProjects />} />
+        <Route path="*" element={<Home />} />
+        <Route path="Mission" element={<Mission /> }/>
       </Routes>
       <Footer />
     </HashRouter>
