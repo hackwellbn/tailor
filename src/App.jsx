@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/HomePage/Home';
 import About from './Pages/AboutPage/About';
 import Contact from './Pages/Contacts/Contact';
@@ -8,10 +8,11 @@ import Footer from './Components/Footer/Footer';
 import './App.css'
 import Quote from './Pages/Quote/Quote';
 import FeaturedProjects from './Pages/FeaturedProjects/FeaturedProjects';
-import Production from './Pages/Production/Production'
+import Production from './Pages/Production/Production';
+
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,10 +21,9 @@ const App = () => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/quote" element={<Quote />} />
         <Route path="/FeaturedProjects" element={<FeaturedProjects />} />
-
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
