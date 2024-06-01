@@ -46,7 +46,7 @@ const Production = () => {
                     <div className="procedure">
                         <div className="procedure-image procedure-box">
                             {FeaturedProductions.length > 0 && (
-                                <img src={FeaturedProductions[0].image} alt="" />
+                                <img src={FeaturedProductions[1].image} alt="" />
                             )}
                         </div>
                         <p className='procedure-box'>Every product undergoes rigorous quality control checks to meet our high standards and customer expectations.</p>

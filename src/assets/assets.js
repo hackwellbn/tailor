@@ -32,8 +32,9 @@ import metals_2 from './metals2.jpg'
 import metals_3 from './metals3.jpg'
 import Jush from "./romans6_3.jpeg"
 import Videoweld2 from './videoweld2.mp4'
-import consultation_2 from './consultation2.jpg'
-import Designingplanning from "./design_and_planning.jpg";
+// import consultation_2 from './consultation2.jpg'
+import Designingplanning from "./bluePrint.jpg";
+import weldingmaterials from './weldingmaterials.jpg'
 
 export const videosWeld = {
   Videoweld,
@@ -203,9 +204,11 @@ export const  FeaturedProjects =[{
 }]
 export const FeaturedProductions =[
   {
-    image: consultation_2,
+    // image: consultation_2,
+    image: Designingplanning,
+
   },
   {
-    image: Designingplanning,
+    image: weldingmaterials,
   }
 ]
