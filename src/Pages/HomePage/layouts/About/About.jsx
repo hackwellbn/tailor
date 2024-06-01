@@ -1,12 +1,9 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './About.css';
 import { consultations } from '../../../../assets/assets';
 
 const About = () => {
-    const handleNavigation = (url) => {
-        window.location.href = '/about';
-    };
-
     return (
         <div>
             <div className="About-container">
@@ -19,9 +16,9 @@ const About = () => {
                                     <p>{item.description}</p>
                                     {item.buttonText && item.buttonLink && (
                                         <div className="btns">
-                                            <button className='btn' onClick={() => handleNavigation(item.buttonLink)}>
+                                            <NavLink to={item.buttonLink} className='btn'>
                                                 {item.buttonText}
-                                            </button>
+                                            </NavLink>
                                         </div>
                                     )}
                                 </div>
