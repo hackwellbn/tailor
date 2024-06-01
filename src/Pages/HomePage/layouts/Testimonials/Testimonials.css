@@ -1,5 +1,6 @@
 .testimonials-wrapper {
-  color: var(--neutral-charcoal);
+  /* color: var(--neutral-charcoal); */
+  z-index: 1000;
 }
 
 .testimonial-container {
@@ -19,9 +20,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: calc(33.33% - 20px);
   font-size: 18px;
-  animation: appear linear forwards;
-  animation-range: entry 25% cover 50%;
-  animation-timeline: view();
+  
 }
 
 .testimonial-text {
@@ -59,17 +58,4 @@
 
 .star {
   font-size: 18px;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-    scale: 0.8;
-    transform: translateX(30px);
-  }
-  100% {
-    opacity: 1;
-    scale: 1;
-    transform: matrix3d(100%);
-  }
 }

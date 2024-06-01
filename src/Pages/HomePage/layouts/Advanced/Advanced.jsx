@@ -4,7 +4,8 @@ import { assets } from '../../../../assets/assets'
 
 const Advanced = () => {
 
-    const handleLink = (e) => {
+    const handleLink = (event) => {
+        event.preventDefault();
         window.location.href = '/Contact';
     }
     return (
@@ -22,7 +23,7 @@ const Advanced = () => {
                         <img src={assets.unleash} alt="" />
                         <div className="unleash-overlay">
                             <p>we work in strength and in boldness just to bring the quality designs you prefer that is commencing with a great commitment from consultation to the end products</p>
-                        <div className="lined"></div>
+                            <div className="lined"></div>
                         </div>
                     </div>
 

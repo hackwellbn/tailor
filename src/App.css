@@ -104,17 +104,13 @@ p {
     background-color: var(--background-color-dark);
     color: var(--text-color-dark);
   }
-  p {
-    /* Additional styles for paragraphs */
-    animation: appear linear forwards;
-    animation-range: entry 25% cover 50%;
-    animation-timeline: view();
-  }
+  
   100% {
     background-color: var(--background-color-light);
     color: var(--text-color-light);
   }
 }
+
 
 /* Additional styles for muted text */
 .muted {
