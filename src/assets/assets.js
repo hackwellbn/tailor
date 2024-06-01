@@ -72,7 +72,7 @@ export const heroSection = [
       "Explore the world of welding, where skilled artisans blend tradition with innovation to create remarkable metalwork. From intricate designs to structural integrity, our craftsmanship sets the standard for excellence in welding. Discover the artistry and precision behind every weld at Welding.",
     image: banner2,
     buttonText: "Learn More",
-    buttonLink: "/about",
+    buttonLink: "/About",
   },
   {
     title: "Unleash Your Creativity",
