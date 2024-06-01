@@ -18,7 +18,6 @@ const About = () => {
                                 <div className="about-description about-flex">
                                     <h3>{item.heading}</h3>
                                     <p>{item.description}</p>
-                                    {/* Add a Link to the Mission page */}
                                     <Link to="/Mission" className="btn">Mission</Link>
                                     {item.buttonText && item.buttonLink && (
                                         <div className="btns">
