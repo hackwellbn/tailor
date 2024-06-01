@@ -8,13 +8,14 @@ import Footer from './Components/Footer/Footer';
 import './App.css'
 import Quote from './Pages/Quote/Quote';
 import FeaturedProjects from './Pages/FeaturedProjects/FeaturedProjects';
+import Production from './Pages/Production/Production'
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/production" element={<Production />} /> */}
+        <Route path="/Production" element={<Production />} />
         <Route path="/about" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/quote" element={<Quote />} />

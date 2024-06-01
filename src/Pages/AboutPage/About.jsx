@@ -8,16 +8,16 @@ const About = () => {
             <div className="about-hero">
                 <div className="line"></div>
                 <div className="image">
-                    <p className="text-shorter">{AboutFeatures[0].title}</p>
+                    <p>{AboutFeatures[0].title}</p>
                 </div>
             </div>
-            <section className="wrapper">
-                <div className="wrapper-items">
-                    <p className='wrapper-body '>"{AboutFeatures[0].content}"
+            <section className="wrapper-2">
+                <div className="wrapper-items-2">
+                    <p className='wrapper-body-2 '>"{AboutFeatures[0].content}"
                         <h6><span>welcome all!</span></h6>
                         <div className="yellow-line"></div>
                     </p>
-                    <div className="image-wrapper wrapper-body">
+                    <div className="image-wrapper-2 wrapper-body-2">
                         <img src={assets.Jush} alt="CEO" />
                         <h5><span>C.E.O BlessedFabricators</span></h5>
                     </div>
@@ -36,7 +36,7 @@ const About = () => {
                             Through its relentless pursuit of excellence and dedication to its craft, Blessed Fabricators continues to shape the landscape of metalwork fabrication in Lucky Summer and beyond, leaving an indelible mark on the industry.</p>
                     </div>
                     <div className="history-body">
-                        <video className='history-video' src={videosWeld.Videoweld2} autoPlay loop controls>
+                        <video className='history-video' src={videosWeld.Videoweld2} autoPlay loop>
                         </video>
                     </div>
                 </div>

@@ -32,6 +32,8 @@ import metals_2 from './metals2.jpg'
 import metals_3 from './metals3.jpg'
 import Jush from "./romans6_3.jpeg"
 import Videoweld2 from './videoweld2.mp4'
+import consultation_2 from './consultation2.jpg'
+
 export const videosWeld = {
   Videoweld,
   Videoweld2,
@@ -198,3 +200,8 @@ export const  FeaturedProjects =[{
   image: welding_1,
   video: videoProject,
 }]
+export const FeaturedProductions =[
+  {
+    image: consultation_2,
+  }
+]

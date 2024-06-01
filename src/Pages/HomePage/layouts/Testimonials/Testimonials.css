@@ -1,4 +1,4 @@
-.wrapper {
+.wrapper-1 {
   color: var(--neutral-charcoal);
 }
 .testimonial-container {
@@ -30,13 +30,13 @@
   margin-bottom: 10px;
 }
 
-.author-name {
+.author-name-1 {
   color: var(--neutral-silver);
   font-weight: bold;
   font-size: 14px;
 }
 
-.image-container {
+.image-container-1 {
   width: 150px;
   height: 150px;
   overflow: hidden;
@@ -45,7 +45,7 @@
   top: -50px;
 }
 
-.image-container img {
+.image-container-1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;

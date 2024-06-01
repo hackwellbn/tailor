@@ -38,9 +38,9 @@ const Hero = () => {
                 </div>
                 <ul className='icons'>
                   <li><a href="http://"><FontAwesomeIcon icon={faFacebook} className='icon' /></a></li>
-                  <li><a href="http://"><FontAwesomeIcon icon={faWhatsapp} className='icon' /></a></li>
+                  <li><a href="https://wa.me/+254741887526"><FontAwesomeIcon icon={faWhatsapp} className='icon' /></a></li>
                   <li><a href="http://"><FontAwesomeIcon icon={faLinkedin} className='icon' /></a></li>
-                  <li><a href="http://"><FontAwesomeIcon icon={faInstagram} className='icon' /></a></li>
+                  <li><a href="https://www.instagram.com/bfabricators2023/?igsh=MWkzdTN0bzI5OXR6Yg%3D%3D"><FontAwesomeIcon icon={faInstagram} className='icon' /></a></li>
                 </ul>
               </div>
             </div>
