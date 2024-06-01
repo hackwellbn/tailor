@@ -125,8 +125,8 @@ export const consultations = [
     description:
       "At BlessedFabricators, we believe that welding is more than just a technical skill—it's an art form.",
     image: aboutHome,
-    buttonText: "/about",
-    buttonLink: "about us",
+    buttonText: "Lern More",
+    buttonLink: "/about",
   },
   {
     heading: "Consultation 2",
