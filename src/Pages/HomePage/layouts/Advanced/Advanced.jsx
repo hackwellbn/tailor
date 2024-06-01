@@ -1,13 +1,9 @@
-import React from 'react'
-import './Advanced.css'
-import { assets } from '../../../../assets/assets'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Advanced.css';
+import { assets } from '../../../../assets/assets';
 
 const Advanced = () => {
-
-    const handleLink = (event) => {
-        event.preventDefault();
-        window.location.href = '/Contact';
-    }
     return (
         <div className='advanced'>
             <div className="unleash-container">
@@ -15,7 +11,7 @@ const Advanced = () => {
                     <div className="unleash">
                         <h2>unleash the power of precision welding</h2>
                         <p>Discover industry-leading welding solutions tailored to elevate your projects to the next level.</p>
-                        <button onClick={handleLink} className='btn'>Get started Now</button>
+                        <NavLink to="/Contact" className='btn'>Get started Now</NavLink>
                     </div>
                 </div>
                 <div className="unleash-content">
@@ -26,11 +22,10 @@ const Advanced = () => {
                             <div className="lined"></div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Advanced
+export default Advanced;
