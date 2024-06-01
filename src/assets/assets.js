@@ -30,9 +30,11 @@ import structure_2 from "./sk_2.jpg"
 import metals from './metals.jpg'
 import metals_2 from './metals2.jpg'
 import metals_3 from './metals3.jpg'
+import Jush from "./romans6_3.jpeg"
+import Videoweld2 from './videoweld2.mp4'
 export const videosWeld = {
   Videoweld,
-
+  Videoweld2,
 };
 export const assets = {
   unleash,
@@ -46,6 +48,8 @@ export const assets = {
   metals,
   metals_2,
   metals_3,
+  Jush,
+
  
 
  
