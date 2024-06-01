@@ -4,7 +4,7 @@ import { consultations } from '../../../../assets/assets';
 
 const About = () => {
     const handleNavigation = (url) => {
-        window.location.href = './about';
+        window.location.href = '/about';
     };
 
     return (
