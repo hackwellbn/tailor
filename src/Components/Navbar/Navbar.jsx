@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -28,9 +28,30 @@ const Navbar = () => {
     setDropDownOpen(!dropDownOpen);
   };
 
+  const navigate = useNavigate();
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    navigate('/');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleNavLinkClick = () => {
+    toggleMenu();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <nav className={`navbar ${isFixed ? 'fixed' : ''}`}>
-      <div className="logo">Blessed<span className='coloredletter'>F</span>abricators</div>
+      <NavLink to="/" className="logo" onClick={handleLogoClick}>
+        Blessed<span className='coloredletter'>F</span>abricators
+      </NavLink>
       <span className="material-icons menu-icon" onClick={toggleMenu}>
         {menuOpen ? 'close' : 'menu'}
       </span>
@@ -41,8 +62,12 @@ const Navbar = () => {
           </span>
         )}
         <ul className='navlists'>
-          <li><Link to='/' className='navLink' onClick={toggleMenu}>Home</Link></li>
-          <li><Link to='/About' className='navLink' onClick={toggleMenu}>About</Link></li>
+          <li>
+            <NavLink to='/' className='navLink' onClick={handleNavLinkClick}>Home</NavLink>
+          </li>
+          <li>
+            <NavLink to='/About' className='navLink' onClick={handleNavLinkClick}>About</NavLink>
+          </li>
           <li className="toggleDropDown" onClick={toggleDropDown}>
             <span className='navLink'>Services</span>
             <span className="material-symbols-outlined dropkey">
@@ -50,16 +75,26 @@ const Navbar = () => {
             </span>
             {dropDownOpen && (
               <ul className='toggledropdown box'>
-                <li><Link className='toggled' to="/Production" onClick={toggleMenu}>Production</Link></li>
+                <li>
+                  <NavLink className='toggled' to="/Production" onClick={handleNavLinkClick}>Production</NavLink>
+                </li>
                 <hr />
-                <li><Link className='toggled' to="/FeaturedProjects" onClick={toggleMenu}>Featured Projects</Link></li>
+                <li>
+                  <NavLink className='toggled' to="/FeaturedProjects" onClick={handleNavLinkClick}>Featured Projects</NavLink>
+                </li>
                 <hr />
-                <li><Link className='toggled' to="/Mission" onClick={toggleMenu}>Mission</Link></li>
+                <li>
+                  <NavLink className='toggled' to="/Mission" onClick={handleNavLinkClick}>Mission</NavLink>
+                </li>
               </ul>
             )}
           </li>
-          <li><Link to='/Contact' className='navLink' onClick={toggleMenu}>Contact</Link></li>
-          <li><Link to="/quote" className="navLink" onClick={toggleMenu}>Get a Quote</Link></li>
+          <li>
+            <NavLink to='/Contact' className='navLink' onClick={handleNavLinkClick}>Contact</NavLink>
+          </li>
+          <li>
+            <NavLink to="/quote" className="navLink" onClick={handleNavLinkClick}>Get a Quote</NavLink>
+          </li>
         </ul>
       </div>
     </nav>
