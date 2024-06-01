@@ -9,8 +9,8 @@ const ShowCase = () => {
     return (
         <section className="showcase">
             <div className="showcase-content">
-            <h1>Crafting Quality, One Project At A Time</h1>
-                <p>Dive into the details of our exceptional craftsmanship.</p>
+                <h1>showcasing our designs from simple to complex</h1>
+                <p> <strong>"converting row materials tu useful products" </strong> the Aim Albert Odhiambo</p>
                 <div className="showcase-buttons">
                     <button className="btn btn-primary" onClick={handleServices}>Explore Now</button>
                     <button className="btn btn-secondary">Learn More</button>
