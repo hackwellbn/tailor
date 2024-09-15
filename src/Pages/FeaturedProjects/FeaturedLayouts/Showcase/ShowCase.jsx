@@ -11,9 +11,9 @@ const ShowCase = () => {
                 <p> <strong>"converting row materials to useful products"</strong> the Aim of  Actuary,<b>-Albert Odhiambo-</b></p>
                 <div className="showcase-buttons">
                     {/* <button className="btn btn-primary" onClick={handleServices}>Explore Now</button> */}
-                    <button><Link to='/Production'>Production</Link></button>
+                    <Link to='/Production' className='btn btn-secondary'>Production</Link>
                     {/* <button className="btn btn-secondary"></button> */}
-                    <button><Link to='/about'>About us</Link></button>
+                    <Link to='/about' className='btn btn-secondary'>About us</Link>
                 </div>
             </div>
             <div className="showcase-images">
