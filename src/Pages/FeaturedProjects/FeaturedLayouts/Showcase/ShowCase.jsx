@@ -1,19 +1,19 @@
 import React from 'react';
 import './ShowCase.css';
 import { FeaturedProjects, assets } from '../../../../assets/assets';
+import { Link } from 'react-router-dom';
+
 const ShowCase = () => {
-    const handleServices = (e) => {
-        e.preventDefault();
-        window.location.href = "/services"
-    }
     return (
         <section className="showcase">
             <div className="showcase-content">
                 <h1>showcasing our designs from simple to complex</h1>
                 <p> <strong>"converting row materials to useful products"</strong> the Aim of  Actuary,<b>-Albert Odhiambo-</b></p>
                 <div className="showcase-buttons">
-                    <button className="btn btn-primary" onClick={handleServices}>Explore Now</button>
-                    <button className="btn btn-secondary">Learn More</button>
+                    {/* <button className="btn btn-primary" onClick={handleServices}>Explore Now</button> */}
+                    <button><Link to='/Production'>Production</Link></button>
+                    {/* <button className="btn btn-secondary"></button> */}
+                    <button><Link to='/about'>About us</Link></button>
                 </div>
             </div>
             <div className="showcase-images">
