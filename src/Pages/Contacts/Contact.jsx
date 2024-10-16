@@ -50,7 +50,7 @@ const Contact = () => {
                             </div>
                             <div className="phone cont">
                                 <h2>Phone Number</h2>
-                                <p>(+254) 794422827</p>
+                                <p>+254 (0) 741 887526</p>
                             </div>
                             <div className="email cont">
                                 <h2>Email Address</h2>
