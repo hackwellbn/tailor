@@ -17,7 +17,7 @@ const Footer = () => {
               <li><a href="https://www.facebook.com/profile.php?id=61566856755729&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a></li>
               <li><a href="https://wa.me/+254741887526"><FontAwesomeIcon icon={faWhatsapp} /> </a></li>
               <li><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-              <li><a href="#"><FontAwesomeIcon icon={faTiktok} /></a></li>
+              <li><a href="https://www.tiktok.com/@blessed.fabricato?_t=8qai51wbV81&_r=1"><FontAwesomeIcon icon={faTiktok} /></a></li>
               <li><a href="https://www.instagram.com/bfabricators2023/?igsh=MWkzdTN0bzI5OXR6Yg%3D%3D"><FontAwesomeIcon icon={faInstagram}  /></a></li>
             </ul>
           </div>
