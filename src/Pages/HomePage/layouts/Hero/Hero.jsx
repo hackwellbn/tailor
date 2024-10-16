@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp, faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faFacebook, faLinkedin, faInstagram ,faTiktok} from '@fortawesome/free-brands-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
@@ -37,10 +37,11 @@ const Hero = () => {
                   </button>
                 </div>
                 <ul className='icons'>
-                  <li><a href="http://"><FontAwesomeIcon icon={faFacebook} className='icon' /></a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61566856755729&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} className='icon' /></a></li>
                   <li><a href="https://wa.me/+254741887526"><FontAwesomeIcon icon={faWhatsapp} className='icon' /></a></li>
                   <li><a href="http://"><FontAwesomeIcon icon={faLinkedin} className='icon' /></a></li>
                   <li><a href="https://www.instagram.com/bfabricators2023/?igsh=MWkzdTN0bzI5OXR6Yg%3D%3D"><FontAwesomeIcon icon={faInstagram} className='icon' /></a></li>
+ <li><a href="https://www.tiktok.com/@blessed.fabricato?_t=8qai51wbV81&_r=1"><FontAwesomeIcon icon={faTiktok} className='icon' /></a></li>
                 </ul>
               </div>
             </div>
