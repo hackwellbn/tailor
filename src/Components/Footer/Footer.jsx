@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="footer-content">
             <h2>follow us</h2>
             <ul className='footer-listings'>
-              <li><a href="#"><FontAwesomeIcon icon={faFacebook} /></a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61566856755729&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a></li>
               <li><a href="https://wa.me/+254741887526"><FontAwesomeIcon icon={faWhatsapp} /> </a></li>
               <li><a href="#"><FontAwesomeIcon icon={faLinkedin} /></a></li>
               <li><a href="#"><FontAwesomeIcon icon={faTiktok} /></a></li>
@@ -40,7 +40,7 @@ const Footer = () => {
       </section>
       <section className='footer-links'>
         <div className="footer-last">
-          <p>Designed and developed by <a href="mailto:softnet.innovationlab@gmail.com">SoftNet</a></p>
+          <p>Designed and developed by <a href="https://softnetinnovationlabs.onrender.com/">SoftNet</a></p>
           <p>&copy; All rights reserved. BlessedFabricators</p>
         </div>
       </section>
