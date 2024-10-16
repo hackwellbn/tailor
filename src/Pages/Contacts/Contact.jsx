@@ -86,7 +86,7 @@ const Contact = () => {
                             can reach us:
                         </p>
                         <p>
-                            Call us at: <a href="tel:0713070246">0713070246</a>
+                            Call us at: <a href="tel:+254 741887526">+254 (0) 741 887526</a>
                         </p>
                         <p>
                             If you need to reschedule or have any questions, please email us at:{" "}
